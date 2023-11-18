@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
 
     <!--==========font awsome cdn link ========== -->
     <link
@@ -13,12 +13,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--========== Glide js cdn links ========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.css"
+    />
 
-    <title>Online Shopping Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.css"
+    />
+
+    <title>Ecommerce Shopping Website</title>
   </head>
   <body>
     <!-- ==== top header ===== -->
-    <div class="top-header">
+    <div id="top-header" class="top-header">
       <div class="container top-header-container">
         <div class="top-header-wrapper">
           <span class="top-header-text">
@@ -45,13 +55,13 @@
             <a href="#" class="navbar-link">Home</a>
           </li>
           <li class="navbar-list-item">
-            <a href="#" class="navbar-link">About</a>
+            <a href="about.html" class="navbar-link">About</a>
           </li>
           <li class="navbar-list-item">
-            <a href="#" class="navbar-link">Contact</a>
+            <a href="product.html" class="navbar-link">Shop</a>
           </li>
           <li class="navbar-list-item">
-            <a href="#" class="navbar-link">Sign up</a>
+            <a href="contact.html" class="navbar-link">Contact</a>
           </li>
         </ul>
         <div class="navbar-icons">
@@ -63,8 +73,24 @@
             />
             <i class="fa-solid fa-magnifying-glass navbar-search"></i>
           </form>
+          <div class="navbar-icons display-flex">
+            <a href="login.html" class="navbar-icon"
+              ><i class="fa-solid fa-user"></i
+            ></a>
+            <div class="navbar-icon">
+              <i class="fa-regular fa-heart"></i>
+              <span class="display-flex">0</span>
+            </div>
+            <a href="cart.html" class="navbar-icon"
+              ><i class="fa-solid fa-cart-shopping"></i
+              ><span class="display-flex">0</span></a
+            >
+          </div>
+          <!-- <a href="login.html"><i class="fa-solid fa-user navbar-user"></i></a>
           <i class="fa-regular fa-heart navbar-heart"></i>
-          <i class="fa-solid fa-cart-shopping navbar-cart"></i>
+          <a href="cart.html"
+            ><i class="fa-solid fa-cart-shopping navbar-cart"></i
+          ></a> -->
         </div>
       </div>
     </nav>
@@ -82,11 +108,20 @@
           <a href="#" class="header-sidebar-link">Health & Beauty</a>
         </div>
         <img
-          src="/images/header/header1.jpeg"
+          src="/images/header/header2.jpeg"
           alt="header-image"
           class="header-image"
         />
       </div>
     </header>
+
+    <!-- ===== Glider javascript ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.js"></script>
+
+    <!-- ===== Slider javascript ===== -->
+    <script src="/JAVASCRIPT/slider.js"></script>
+
+    <!-- ===== Main javascript ===== -->
+    <script src="/JAVASCRIPT/main.js"></script>
   </body>
 </html>
