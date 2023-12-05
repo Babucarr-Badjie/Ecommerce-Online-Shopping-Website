@@ -27,56 +27,72 @@
     <title>Ecommerce Shopping Website</title>
   </head>
   <body>
-    <!-- ==== top header ===== -->
-    <div id="top-header" class="top-header">
-      <div class="container top-header-container">
-        <div class="top-header-wrapper">
-          <span class="top-header-text">
+    <!-- ===== header ======== -->
+    <header id="header" class="header">
+      <!-- ==== top header ===== -->
+      <div class="top-header">
+        <div class="top-header-container">
+          <span class="top-header-text display-flex">
             Sales for All Products & Free Express Delivery Services - OFF 50%!
           </span>
           <a href="#" class="top-header-link">SHOP NOW</a>
         </div>
       </div>
-    </div>
+      <!-- ===== Navbar ======== -->
+      <div class="navbar">
+        <div class="navbar-container container display-flex">
+          <a href="#" class="navbar-logo"
+            ><img
+              src="./images/logo/outsourcing-icon.png"
+              class="narbar-logo"
+              alt="shop logo"
+              width="50px"
+              height="50px"
+          /></a>
+          <ul class="navbar-list display-flex">
+            <li class="navbar-list-item">
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+            <li class="navbar-list-item">
+              <a href="about.html" class="navbar-link">About</a>
+            </li>
+            <li class="navbar-list-item">
+              <a href="product.html" class="navbar-link">Shop</a>
+            </li>
+            <li class="navbar-list-item">
+              <a href="#terms" class="navbar-link">Terms</a>
+            </li>
+            <li class="navbar-list-item">
+              <a href="contact.html" class="navbar-link">Contact</a>
+            </li>
 
-    <!-- ===== Navbar ======== -->
-    <nav class="navbar">
-      <div class="container navbar-container">
-        <a href="#" class="navbar-logo"
-          ><img
-            src="./images/logo/outsourcing-icon.png"
-            class="narbar-logo"
-            alt="shop logo"
-            width="50px"
-            height="50px"
-        /></a>
-        <ul class="navbar-list">
-          <li class="navbar-list-item">
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-          <li class="navbar-list-item">
-            <a href="about.html" class="navbar-link">About</a>
-          </li>
-          <li class="navbar-list-item">
-            <a href="product.html" class="navbar-link">Shop</a>
-          </li>
-          <li class="navbar-list-item">
-            <a href="contact.html" class="navbar-link">Contact</a>
-          </li>
-        </ul>
-        <div class="navbar-icons">
-          <form action="#" class="navbar-form">
-            <input
-              type="text"
-              class="navbar-form-input"
-              placeholder="search here..."
-            />
-            <i class="fa-solid fa-magnifying-glass navbar-search"></i>
-          </form>
+            <!-- small device menu  -->
+            <li class="navbar-icons">
+              <a href="login.html" class="navbar-icon"
+                ><i class="fa-regular fa-user"></i
+              ></a>
+              <div class="navbar-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="navbar-icon">
+                <i class="fa-regular fa-heart"></i>
+                <span class="display-flex">0</span>
+              </div>
+              <a href="cart.html" class="navbar-icon"
+                ><i class="fa-solid fa-cart-shopping"></i
+                ><span class="display-flex">0</span></a
+              >
+            </li>
+          </ul>
+
+          <!-- navbar icons -->
           <div class="navbar-icons display-flex">
             <a href="login.html" class="navbar-icon"
-              ><i class="fa-solid fa-user"></i
+              ><i class="fa-regular fa-user"></i
             ></a>
+            <div class="navbar-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
             <div class="navbar-icon">
               <i class="fa-regular fa-heart"></i>
               <span class="display-flex">0</span>
@@ -86,32 +102,12 @@
               ><span class="display-flex">0</span></a
             >
           </div>
-          <!-- <a href="login.html"><i class="fa-solid fa-user navbar-user"></i></a>
-          <i class="fa-regular fa-heart navbar-heart"></i>
-          <a href="cart.html"
-            ><i class="fa-solid fa-cart-shopping navbar-cart"></i
-          ></a> -->
+
+          <!-- Hamburger menu -->
+          <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
-      </div>
-    </nav>
-    <header class="header">
-      <div class="container header-container">
-        <div class="header-sidebar">
-          <a href="#" class="header-sidebar-link">Women's Fashion</a
-          ><a href="#" class="header-sidebar-link">Men's Fashion</a
-          ><a href="#" class="header-sidebar-link">Electronics</a
-          ><a href="#" class="header-sidebar-link">Home & Lifestyle</a
-          ><a href="#" class="header-sidebar-link">Sports & Outdoors</a
-          ><a href="#" class="header-sidebar-link">Baby's & Toys</a
-          ><a href="#" class="header-sidebar-link">Groceries</a
-          ><a href="#" class="header-sidebar-link">Medicines</a>
-          <a href="#" class="header-sidebar-link">Health & Beauty</a>
-        </div>
-        <img
-          src="/images/header/header2.jpeg"
-          alt="header-image"
-          class="header-image"
-        />
       </div>
     </header>
 
