@@ -159,7 +159,7 @@ li {
 .hero .glide__slides {
   background-color: var(--gray-color2);
   position: relative;
-  height: calc(100vh -6rem);
+  height: calc(100vh - 6rem);
   margin: 0 4rem;
   overflow: hidden;
 }
@@ -170,12 +170,15 @@ li {
   position: relative;
   height: 100%;
   padding-top: 3rem;
+  
 }
 .hero .hero-container-left {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 5rem;
+  opacity: 0;
   transition: all 1000ms ease-in-out;
+  
 }
 .hero-container-left h1 {
   font-size: 5rem;
@@ -188,7 +191,44 @@ li {
 .hero .hero-container-left .hero-button {
   display: inline-block;
   padding: 1rem 3rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  background-color: var(--dark-color-2);
+  color: var(--white-color-1);
 }
+.hero .hero-container-right {
+  flex: 0 0 50%;
+  height: 100%;
+  /* width: 100%; */
+  position: relative;
+  text-align: center;
+}
+.hero .hero-container-right img {
+  position: relative;
+  width: 55rem;
+  opacity: 0;
+  transition: all 1000ms ease-in-out;
+}
+.hero .hero-container-right img.hero-img-1 {
+  width: 85%;
+  right: -25%;
+  bottom: -50%;
+  
+}
+.hero .hero-container-right img.hero-img-2 {
+  width: 90%;
+  right: -40%;
+  bottom: -40%;
+}
+.glide__slide--active .hero-container .hero-container-right img {
+  bottom: -3%;
+  opacity: 1;
+}
+.glide__slide--active .hero-container-left {
+  opacity: 1;
+  top: 35%;
+}
+
 /* ===== media query ====== */
 @media only screen and (max-width: 768px) {
   .navbar-list {
