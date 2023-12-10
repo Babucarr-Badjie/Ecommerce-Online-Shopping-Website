@@ -170,66 +170,64 @@ li {
   position: relative;
   height: 100%;
   padding-top: 3rem;
-  
 }
-.hero .hero-container-left {
+.hero .hero-left {
   position: absolute;
   top: 0%;
   left: 5rem;
   opacity: 0;
   transition: all 1000ms ease-in-out;
-  
 }
-.hero-container-left h1 {
+.hero-left h1 {
   font-size: 5rem;
   margin: 1rem 0;
 }
-.hero-container-left p {
+.hero-left p {
   font-size: 1.6rem;
   margin: 0 0 1rem;
 }
-.hero .hero-container-left .hero-button {
+.hero .hero-left .hero-button {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.6rem;
   margin-top: 1rem;
-  background-color: var(--dark-color-2);
+  background-color: var(--green-color);
   color: var(--white-color-1);
+  border-radius: 5px;
 }
-.hero .hero-container-right {
+.hero .hero-right {
   flex: 0 0 50%;
   height: 100%;
   /* width: 100%; */
   position: relative;
   text-align: center;
 }
-.hero .hero-container-right img {
+.hero .hero-right img {
   position: relative;
   width: 55rem;
   opacity: 0;
   transition: all 1000ms ease-in-out;
 }
-.hero .hero-container-right img.hero-img-1 {
+.hero .hero-right img.hero-img-1 {
   width: 85%;
   right: -25%;
   bottom: -50%;
-  
 }
-.hero .hero-container-right img.hero-img-2 {
+.hero .hero-right img.hero-img-2 {
   width: 90%;
   right: -40%;
   bottom: -40%;
 }
-.glide__slide--active .hero-container .hero-container-right img {
+.glide__slide--active .hero-container .hero-right img {
   bottom: -3%;
   opacity: 1;
 }
-.glide__slide--active .hero-container-left {
+.glide__slide--active .hero-left {
   opacity: 1;
   top: 35%;
 }
 
-/* ===== media query ====== */
+/* ===== media query for Navbar ====== */
 @media only screen and (max-width: 768px) {
   .navbar-list {
     position: fixed;
@@ -275,5 +273,42 @@ li {
   }
   .navbar {
     border-bottom: none;
+  }
+}
+
+/* ===== Media Query for Hero section ===== */
+@media only screen and (max-width: 999px) {
+  .glide__slide--active .hero-left {
+    top: 15%;
+  }
+  .hero .hero-right img.hero-img-1 {
+    top: 45%;
+    width: 100%;
+  }
+  .hero .hero-right img.hero-img-2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .hero-container .hero-right img.hero-img-1 {
+    width: 30rem;
+  }
+  .hero-container .hero-right img.hero-img-2 {
+    width: 33rem;
+  }
+  .hero,
+  .hero .glide__slides {
+    margin: 0;
+    padding: 0 3rem;
+  }
+  .hero .hero-left h1 {
+    font-size: 3rem;
+  }
+  .hero .hero-left span {
+    font-size: 1.4rem;
+  }
+  .hero .hero-left p {
+    font-size: 1.5rem;
+    width: 80%;
   }
 }
