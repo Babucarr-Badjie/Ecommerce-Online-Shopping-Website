@@ -263,6 +263,9 @@ li {
   .navbar-list .navbar-icons {
     display: flex;
   }
+  .top-header {
+    display: none;
+  }
   .top-header span {
     font-size: 16px;
     display: flex;
