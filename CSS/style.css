@@ -227,6 +227,28 @@ li {
   top: 35%;
 }
 
+/* ======= Category Section ======== */
+.section {
+  padding: 10rem 0 5rem 0;
+  /* overflow: hidden; */
+}
+.category-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 114rem;
+  margin: auto;
+  padding: 0 3rem;
+}
+.category-container .category {
+  max-width: 35rem;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
 /* ===== media query for Navbar ====== */
 @media only screen and (max-width: 768px) {
   .navbar-list {
