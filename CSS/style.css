@@ -88,13 +88,17 @@ li {
 .header {
   position: relative;
   min-height: 100vh;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--gray-color1);
   width: 100%;
   height: 80px;
   border-bottom: 1px solid var(--dark-color-2);
+  z-index: 100;
 }
 .navbar-container {
   justify-content: space-between;
@@ -157,7 +161,7 @@ li {
 /* ===== Hero styles ====== */
 .hero,
 .hero .glide__slides {
-  background-color: var(--gray-color2);
+  background-color: var(--white-color-1);
   position: relative;
   height: calc(100vh - 6rem);
   margin: 0 4rem;
@@ -178,13 +182,20 @@ li {
   opacity: 0;
   transition: all 1000ms ease-in-out;
 }
+.hero .hero-left span {
+  font-size: 24px;
+  font-weight: 900;
+  color: #088178;
+}
 .hero-left h1 {
   font-size: 5rem;
   margin: 1rem 0;
 }
 .hero-left p {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
   margin: 0 0 1rem;
+  line-height: 30px;
 }
 .hero .hero-left .hero-button {
   display: inline-block;
@@ -196,7 +207,7 @@ li {
   border-radius: 5px;
 }
 .hero .hero-right {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
   height: 100%;
   /* width: 100%; */
   position: relative;
@@ -232,6 +243,7 @@ li {
 .section {
   padding: 10rem 0 5rem 0;
   overflow: hidden;
+  
 }
 .category-container {
   display: flex;
@@ -274,18 +286,72 @@ li {
   font-weight: 900;
 }
 
+
+/* ======= New Arrivals section styles ===== */
+.header-title{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.header-title h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.products{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.product-container{
+  position: relative;
+  width: 27rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.product-item img{
+width: 100%;
+/* height: 31rem; */
+height: 100%;
+object-fit: cover;
+transition: all 500ms linear;
+}
+.product-details{
+  padding: 1rem;
+  text-align: center;
+}
+.product-details span {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.product-details a {
+  display: block;
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 1rem;
+  transition: all 300ms linear;
+}
+
 /* ===== media query for Navbar ====== */
 @media only screen and (max-width: 768px) {
   .navbar-list {
     position: fixed;
-    top: 10%;
+    top: 9.2%;
     left: -100%;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     background-color: var(--white-color-1);
     height: 100%;
-    max-width: 35rem;
+    /* max-width: 35rem; */
+    max-width: 80%;
     width: 0;
     z-index: 10;
     transition: all 0.3 ease-in-out;
@@ -304,6 +370,7 @@ li {
   .navbar-container .hamburger-menu {
     display: block;
   }
+
   .navbar-icons {
     display: none;
   }
