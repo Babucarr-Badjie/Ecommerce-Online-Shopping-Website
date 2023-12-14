@@ -193,7 +193,7 @@ li {
 }
 .hero-left p {
   font-size: 2rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   margin: 0 0 1rem;
   line-height: 30px;
 }
@@ -243,7 +243,6 @@ li {
 .section {
   padding: 10rem 0 5rem 0;
   overflow: hidden;
-  
 }
 .category-container {
   display: flex;
@@ -286,9 +285,8 @@ li {
   font-weight: 900;
 }
 
-
 /* ======= New Arrivals section styles ===== */
-.header-title{
+.header-title {
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -298,7 +296,7 @@ li {
   margin-bottom: 1rem;
   font-weight: 600;
 }
-.products{
+.products {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,20 +305,20 @@ li {
   margin: 0 auto;
   padding: 0 2rem;
 }
-.product-container{
+.product-container {
   position: relative;
   width: 27rem;
   margin: auto;
   margin-bottom: 2rem;
 }
-.product-item img{
-width: 100%;
-/* height: 31rem; */
-height: 100%;
-object-fit: cover;
-transition: all 500ms linear;
+.product-item img {
+  width: 100%;
+  /* height: 31rem; */
+  height: 100%;
+  object-fit: cover;
+  transition: all 500ms linear;
 }
-.product-details{
+.product-details {
   padding: 1rem;
   text-align: center;
 }
@@ -336,6 +334,9 @@ transition: all 500ms linear;
   color: #666;
   margin-bottom: 1rem;
   transition: all 300ms linear;
+}
+.product-details a:hover {
+  color: var(--green-color);
 }
 
 /* ===== media query for Navbar ====== */
