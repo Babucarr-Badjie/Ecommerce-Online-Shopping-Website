@@ -238,6 +238,52 @@ li {
   top: 35%;
 }
 
+/* ==== services section ==== */
+
+.featured {
+  display: flex;
+  max-width: 120rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-color: #f0fdf4; */
+  margin: 0 auto;
+  /* padding: 0 2rem; */
+}
+.featured .featured-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 14px;
+}
+.featured .featured-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.featured .featured-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+.featured .featured-box h6 {
+  display: inline-block;
+  padding: 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+}
+.featured .featured-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+.featured .featured-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+.featured .featured-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+
 /* ======= Category Section ======== */
 
 .section {
