@@ -225,9 +225,9 @@ li {
   bottom: -50%;
 }
 .hero .hero-right img.hero-img-2 {
-  width: 90%;
+  width: 85%;
   right: -40%;
-  bottom: -40%;
+  bottom: -60%;
 }
 .glide__slide--active .hero-container .hero-right img {
   bottom: -3%;
@@ -238,19 +238,17 @@ li {
   top: 35%;
 }
 
-/* ==== services section ==== */
+/* ==== service section ==== */
 
-.featured {
+.service {
   display: flex;
   max-width: 120rem;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  /* background-color: #f0fdf4; */
   margin: 0 auto;
-  /* padding: 0 2rem; */
 }
-.featured .featured-box {
+.service .service-box {
   width: 180px;
   text-align: center;
   padding: 25px 15px;
@@ -259,14 +257,14 @@ li {
   border-radius: 4px;
   margin: 14px;
 }
-.featured .featured-box img {
+.service .service-box img {
   width: 100%;
   margin-bottom: 10px;
 }
-.featured .featured-box:hover {
+.service .service-box:hover {
   box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
 }
-.featured .featured-box h6 {
+.service .service-box h6 {
   display: inline-block;
   padding: 8px;
   line-height: 1;
@@ -274,13 +272,13 @@ li {
   color: #088178;
   background-color: #fddde4;
 }
-.featured .featured-box:nth-child(2) h6 {
+.service .service-box:nth-child(2) h6 {
   background-color: #cdebbc;
 }
-.featured .featured-box:nth-child(3) h6 {
+.service .service-box:nth-child(3) h6 {
   background-color: #d1e8f2;
 }
-.featured .featured-box:nth-child(4) h6 {
+.service .service-box:nth-child(4) h6 {
   background-color: #cdd4f8;
 }
 
@@ -474,6 +472,34 @@ li {
   font-size: 1.5rem;
   z-index: 2;
 }
+
+/*  =====Fashion Banner ===== */
+.fashion-banner {
+  position: relative;
+  background-color: var(--gray-color2);
+  padding: 14rem;
+}
+.fashion-banner .right-side img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 75rem;
+}
+.fashion-banner .fashion,
+.fashion-banner p {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.fashion-banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+.fashion-banner .btn {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
 /* ===== media query for Navbar ====== */
 @media only screen and (max-width: 768px) {
   .navbar-list {
@@ -546,6 +572,7 @@ li {
   .hero-container .hero-right img.hero-img-1 {
     width: 30rem;
   }
+
   .hero-container .hero-right img.hero-img-2 {
     width: 33rem;
   }
@@ -608,5 +635,101 @@ li {
   .product-container .product-icons li {
     padding: 0.5rem 1rem;
     font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 847px) {
+  .service {
+    justify-content: center;
+  }
+  .service .service-box {
+    margin: 14px;
+  }
+}
+
+/* ======== Media Query for Fashion Banner section ===== */
+@media only screen and (max-width: 1200px) {
+  .fashion-banner {
+    padding: 14rem 2rem;
+  }
+  .fashion-banner .right-side img {
+    right: -6%;
+    width: 48rem;
+  }
+  .fashion-banner p{
+    font-size: 2.5rem;
+  }
+  .fashion-banner .fashion{
+    font-size: 2.5rem;
+  }
+  .fashion-banner .btn{
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .fashion-banner {
+    padding: 8rem 2rem;
+  }
+  .fashion-banner .right-side img {
+    right: -6%;
+    width: 35rem;
+  }
+  .fashion-banner .fashion,
+  .fashion-banner p {
+    font-size: 2rem;
+  }
+  .fashion-banner h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .fashion-banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 80vh;
+  }
+  .fashion-banner .left-side {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .fashion-banner .right-side img {
+    right: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .fashion-banner .fashion,
+  .fashion-banner p {
+    font-size: 3rem;
+  }
+  .fashion-banner .btn {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .fashion-banner {
+    padding: 8rem 5rem;
+  }
+  .fashion-banner .left-side {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .fashion-banner .right-side img {
+    right: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35rem;
+  }
+  .fashion-banner .fashion,
+  .fashion-banner p {
+    font-size: 2rem;
+  }
+  .fashion-banner .btn {
+    font-size: 2rem;
+  }
+  .fashion-banner h1{
+    font-size: 3rem;
   }
 }
